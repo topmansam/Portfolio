@@ -24,92 +24,92 @@ class Projects extends React.Component {
   }
   render() {
     const spotlightProjects = {
-      "No Man's Land": {
-        title: "no man's land",
+      "Fantasy Survival": {
+        title: "fantasy survival",
         desc:
-          "A third-person survival-mode game where you battle against time and space to return to Earth.",
-        techStack: "C# (UNITY)",
-        link: "https://github.com/slakh96/no-mans-land",
-        open: "https://gazijarin.itch.io/no-mans-land",
+          "A third-person monster survival-mode game where you shoot down a continious wave of monsters.",
+        techStack: "C# | Unity",
+        link: "https://github.com/topmansam/Fantasy-Survival",
+         open: "",
         image: "/assets/nomansland.png"
       },
-      Truth: {
-        title: "truth",
+      museum: {
+        title: "2D Triangulation",
         desc:
-          "A three.js simulation of the planet system revolving around a monolith.",
-        techStack: "JAVASCRIPT (THREE.JS)",
-        link: "https://github.com/gazijarin/truth",
-        open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/truth.png"
+          "2D Triangulation",
+        techStack: "C++ | OpenGL/GLUT",
+        link: "https://github.com/topmansam/2D-Triangulation",
+        // open: "https://gazijarin.github.io/Truth/",
+        image: "/assets/pano.png"
       },
-      "Tall Tales": {
-        title: "tall tales",
+      "Zombie Runnner": {
+        title: "zombie runner",
         desc:
-          "A multi-player story-telling web game for 3-5 players. Its usage of sockets to allow for concurrent gameplay, connecting friends across the internet.",
-        techStack: "NODE.JS (SOCKET.IO), REACT.JS, MONGODB",
-        link: "https://github.com/gazijarin/TallTales",
-        open: "https://talltales.herokuapp.com/",
-        image: "/assets/talltales.png"
+          "Engaging endless runner game called Zombie Runner for iOS, inspired by popular titles like Temple Run and Subway Surfers.",
+        techStack: "C++ | Unreal Engine",
+        // link: "https://github.com/gazijarin/TallTales",
+         open: "https://apps.apple.com/ca/app/zombie-runner/id1645628526",
+        image: "/assets/2.png"
       },
-      Portfolio: {
-        title: "portfolio.js",
+      ParticleFountain: {
+        title: "3D particle fountain",
         desc:
-          "A small JS library that helps with clear and succinct data presentation.",
-        techStack: "NODE.JS (EXPRESS.JS)",
-        link: "https://github.com/gazijarin/Portfolio.js",
-        open: "https://afternoon-ocean-92382.herokuapp.com/",
+          "visually appealing 3D particle system with various effects and interactions.",
+        techStack: "C++ | OpenGL/GLUT",
+        link: "https://github.com/topmansam/3D-Particle-Fountain",
+        // open: "https://afternoon-ocean-92382.herokuapp.com/",
         image: "/assets/portfolio.png"
       }
     };
     const projects = {
-      "TDSB Homework Management Interface": {
+      "Dijkstra's algorithm": {
         desc:
-          "An application created for Toronto District School Board, with a Flask back-end and a Vue front-end.",
-        techStack: "Python (Flask), Vue.js, Bootstrap, SQL",
-        link: "https://github.com/gazijarin/TDSBHomeworkManagement",
-        open: "https://tdsb-app.herokuapp.com/"
+          "The Shortest Path Between Cities program is an implementation of Dijkstra's algorithm to find the shortest path between two cities in a transportation network.",
+        techStack: "Java",
+        link: "https://github.com/topmansam/Dijkstras_algorithm",
+        // open: "https://tdsb-app.herokuapp.com/"
       },
-      "Adam A.I.": {
+      "Conways Game of Life": {
         desc:
-          "A self-learning A.I. that learns to traverse through a complex maze using the genetic algorithm.",
-        techStack: "Javascript, HTML / CSS",
-        link: "https://github.com/gazijarin/adamai",
-        open: "https://gazijarin.github.io/AdamAI/"
+          "A simulation of Conway's Game of Life, a well-known cellular automaton experiment.",
+        techStack: "Java",
+        link: "https://github.com/topmansam/conway",
+        // open: "https://gazijarin.github.io/AdamAI/"
       },
-      "Distributed Logging and Monitoring System": {
+      "Museum tour app": {
         desc:
-          "A system that establishes an ORM connection to a Prisma client in order to communicate logs from microservices.",
-        techStack: "Node.js (Express.js), React.js, PostgreSQL",
+          "360 panoramic interactive system for Brock University and Niagara-on-the-Lake Museum.",
+        techStack: "Node.js | React | Spring Boot | Java | SQL",
         link:
-          "https://github.com/gazijarin/Distributed-Logging-and-Monitoring-System"
+          "https://github.com/dv18uj/COSC-4P02"
       },
-      "Odin Bot": {
-        desc:
-          "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
-        techStack: "Javascript, Node.js, Natural NLP, Telegram API",
-        link: "https://github.com/gazijarin/OdinBot",
-        open: ""
-      },
-      "Game Centre": {
-        desc:
-          "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
-        techStack: "Java, Android Studio",
-        link: "https://github.com/gazijarin/gamecentre",
-        open: ""
-      },
-      "Minimax Stonehenge": {
-        desc:
-          "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
-        techStack: "Python",
-        link: "https://github.com/gazijarin/stonehenge",
-        open: ""
-      }
+      // "Odin Bot": {
+      //   desc:
+      //     "A Telegram bot that helps you excel on your daily tasks through Node NLP.",
+      //   techStack: "Javascript, Node.js, Natural NLP, Telegram API",
+      //   link: "https://github.com/gazijarin/OdinBot",
+      //   open: ""
+      // },
+      // "Game Centre": {
+      //   desc:
+      //     "An Android app consisting of three board games, including multiplayer, autosave, user authentication, etc.",
+      //   techStack: "Java, Android Studio",
+      //   link: "https://github.com/gazijarin/gamecentre",
+      //   open: ""
+      // },
+      // "Minimax Stonehenge": {
+      //   desc:
+      //     "Two-player, zero-sum game with a strategic Minimax artificial intelligence.",
+      //   techStack: "Python",
+      //   link: "https://github.com/gazijarin/stonehenge",
+      //   open: ""
+      // }
     };
 
     return (
       <div id="projects">
         <div className="section-header ">
-          <span className="section-title">/ software-creations</span>
+          <span className="section-title">/ Projects</span>
         </div>
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (

@@ -19,17 +19,16 @@ class About extends React.Component {
   render() {
     const one = (
       <p>
-        I am currently a <b>Software Development Engineer</b> at
-        <a href="https://www.aboutamazon.com/"> Amazon</a>, working in the AWS
-        sector under team Route53. At the same time, I am undertaking a
-        part-time <b> Master's of Science</b> in <b>Software Engineering </b>at{" "}
-        <a href="https://www.ox.ac.uk/about">University of Oxford</a>.
+        I am currently in my last year of my 4 year computer science degree at
+         <a href="https://www.ox.ac.uk/about"> Brock University. </a>
+        My expected graduation date is June 2024. <b> I am pursing software development
+        internships, and new graduate oppurtunites.</b>
       </p>
     );
     const two = (
       <p>
-        Outside of work, I'm interested in following the developments of
-        science. I also play a lot of video games. And make TikToks.
+        Outside of work, I'm interested developing games. Check out my gaming website!
+        <a href="https://goldmetalgames.com/"> Gold Metal Games. </a>
       </p>
     );
     const three = (
@@ -44,8 +43,8 @@ class About extends React.Component {
     const desc_items = [one, two];
 
     const tech_stack = [
-      "Javascript ES6+",
-      "Python",
+      "C++",
+      "C#",
       "React.js",
       "Java",
       "Node.js",
