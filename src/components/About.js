@@ -31,16 +31,8 @@ class About extends React.Component {
         <a href="https://goldmetalgames.com/"> Gold Metal Games. </a>
       </p>
     );
-    const three = (
-      <p>
-        <b>Want to chat?</b> Shoot me a message at{" "}
-        <a href="mailto:gazi.jarin@mail.utoronto.ca">
-          gazi.jarin@mail.utoronto.ca
-        </a>{" "}
-        and let's talk.
-      </p>
-    );
-    const desc_items = [one, two];
+  
+ 
 
     const tech_stack = [
       "C++",
@@ -50,8 +42,7 @@ class About extends React.Component {
       "Node.js",
       "HTML & CSS"
     ];
-
-    const tech_items = tech_stack.map(stack => <li>{stack}</li>);
+ 
 
     return (
       <div id="about">
