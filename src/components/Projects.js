@@ -130,6 +130,9 @@ class Projects extends React.Component {
               <p className="techStack">
                 {spotlightProjects[key]["techStack"]}
               </p>
+              {key === "Fantasy Survival" && (
+                <p className="inProgressLabel">In Progress</p>
+              )}
             </p>
             <ExternalLinks
               githubLink={spotlightProjects[key]["link"]}
