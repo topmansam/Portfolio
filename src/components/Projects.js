@@ -7,6 +7,7 @@ import FadeInSection from "./FadeInSection";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import Carousel from "react-bootstrap/Carousel";
 import ExternalLinks from "./ExternalLinks";
+import particleFountainVideo from "./triangle.mp4";
 
 class Projects extends React.Component {
   constructor() {
@@ -31,16 +32,16 @@ class Projects extends React.Component {
         techStack: "C# | Unity",
         link: "https://github.com/topmansam/Fantasy-Survival",
          open: "",
-        image: "/assets/nomansland.png"
+        image: "/assets/newFantasy.png"
       },
       museum: {
         title: "2D Triangulation",
         desc:
-          "2D Triangulation",
+          "A 2D triangulation algorithm generates a set of unique points and uses them to create triangles that cover the entire 2D space.",
         techStack: "C++ | OpenGL/GLUT",
         link: "https://github.com/topmansam/2D-Triangulation",
         // open: "https://gazijarin.github.io/Truth/",
-        image: "/assets/pano.png"
+        image: "/assets/200.png"
       },
       "Zombie Runnner": {
         title: "zombie runner",
@@ -51,15 +52,13 @@ class Projects extends React.Component {
          open: "https://apps.apple.com/ca/app/zombie-runner/id1645628526",
         image: "/assets/2.png"
       },
-      ParticleFountain: {
+      "Particle Fountain": {
         title: "3D particle fountain",
-        desc:
-          "visually appealing 3D particle system with various effects and interactions.",
+        desc: "Visually appealing 3D particle system with various effects and interactions.",
         techStack: "C++ | OpenGL/GLUT",
         link: "https://github.com/topmansam/3D-Particle-Fountain",
-        // open: "https://afternoon-ocean-92382.herokuapp.com/",
-        image: "/assets/portfolio.png"
-      }
+        video: particleFountainVideo
+      },
     };
     const projects = {
       "Dijkstra's algorithm": {
@@ -113,28 +112,32 @@ class Projects extends React.Component {
         </div>
         <Carousel>
           {Object.keys(spotlightProjects).map((key, i) => (
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src={spotlightProjects[key]["image"]}
-                alt={key}
-              />
-              <div className="caption-bg">
-                <Carousel.Caption>
-                  <h3>{spotlightProjects[key]["title"]}</h3>
-                  <p>
-                    {spotlightProjects[key]["desc"]}
-                    <p className="techStack">
-                      {spotlightProjects[key]["techStack"]}
-                    </p>
-                  </p>
-                  <ExternalLinks
-                    githubLink={spotlightProjects[key]["link"]}
-                    openLink={spotlightProjects[key]["open"]}
-                  ></ExternalLinks>
-                </Carousel.Caption>
-              </div>
-            </Carousel.Item>
+        <Carousel.Item>
+        {spotlightProjects[key]["video"] ? (
+          <video className="d-block w-100" src={spotlightProjects[key]["video"]} autoPlay loop muted />
+        ) : (
+          <img
+            className="d-block w-100"
+            src={spotlightProjects[key]["image"]}
+            alt={key}
+          />
+        )}
+        <div className="caption-bg">
+          <Carousel.Caption>
+            <h3>{spotlightProjects[key]["title"]}</h3>
+            <p>
+              {spotlightProjects[key]["desc"]}
+              <p className="techStack">
+                {spotlightProjects[key]["techStack"]}
+              </p>
+            </p>
+            <ExternalLinks
+              githubLink={spotlightProjects[key]["link"]}
+              openLink={spotlightProjects[key]["open"]}
+            ></ExternalLinks>
+          </Carousel.Caption>
+        </div>
+      </Carousel.Item>
           ))}
         </Carousel>
         <div className="project-container">
