@@ -25,12 +25,11 @@ class About extends React.Component {
         internships, and new graduate oppurtunites.</b>
       </p>
     );
-    // const two = (
-    //   <p>
-    //     Outside of work, I'm interested developing games. Check out my gaming website!
-    //     <a href="https://goldmetalgames.com/"> Gold Metal Games. </a>
-    //   </p>
-    // );
+    const two = (
+      <p>
+        Outside of work, I'm interested in playing chess, going to the gym, and playing video games!.
+      </p>
+    );
   
  
 
@@ -63,7 +62,7 @@ class About extends React.Component {
                   );
                 })}
               </ul>
-              {/* {[two]} */}
+              {[two]}
             </div>
             <div className="about-image">
               <img src={"/assets/sam_face.jpeg"} />
