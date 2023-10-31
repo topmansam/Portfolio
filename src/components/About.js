@@ -20,9 +20,9 @@ class About extends React.Component {
     const one = (
       <p>
         I am currently in my last year of my 4 year computer science degree at
-         <a href="https://www.ox.ac.uk/about"> Brock University. </a>
-        My expected graduation date is June 2024. <b> I am pursing software development
-        internships, and new graduate oppurtunites.</b>
+         <a href="https://brocku.ca/"> Brock University. </a>
+        My expected graduation date is June 2024. <b> I am pursing Software Engineering
+        New Grad Opportunities, and I am also open to Internships!.</b>
       </p>
     );
     const two = (
@@ -65,7 +65,7 @@ class About extends React.Component {
               {[two]}
             </div>
             <div className="about-image">
-              <img src={"/assets/sam_face.jpeg"} />
+              <img src={"/assets/IMG_2759.jpg"}/>
             </div>
           </div>
         </FadeInSection>
